@@ -12,7 +12,6 @@ public class Main {
         double steuer3 = 0.08;
         double steuer = 0;
 
-
         // if (steuer1 > 0.1999 && steuer1 < 0.20001)
        /* if (steuerklasse == 1) {
             steuer =nettoPreis * steuer1;
@@ -46,5 +45,16 @@ public class Main {
        }
         bruttoPreis = nettoPreis + steuer;
         System.out.println("Der Bruttopreis ist: " + bruttoPreis);
+
+        double brPreis;
+        brPreis = brutto (nettoPreis, 0.04);
+        System.out.println("Ergebnis der Methode: " + brPreis);
     }
+
+       public static double brutto(int netto, double steuer) {
+           double ergebnis;
+           ergebnis = netto + netto *steuer;
+           return ergebnis;
+        }
+
 }
