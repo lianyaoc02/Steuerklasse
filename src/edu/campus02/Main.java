@@ -41,7 +41,7 @@ public class Main {
                System.out.println("Steuersatz ist in Steuerklasse 3!");
                break;
            default:
-               System.out.println("Keine Steuerklasse");
+               System.out.println("Achtung, keine Steuerklasse");
                break;
        }
         bruttoPreis = nettoPreis + steuer;
